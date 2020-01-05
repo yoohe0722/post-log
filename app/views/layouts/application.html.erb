@@ -7,9 +7,18 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
 
   <body>
+    <div class="header">
+      <div class="header-left">
+        Post-Log
+      </div>
+      <div class="header-right">
+        <%= link_to("投稿する","#")%>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
